@@ -7,7 +7,8 @@
 				"@openui5/sap.f": "^1.82.2",
 				"@openui5/sap.m": "^1.82.2",
 				"@openui5/sap.ui.core": "^1.82.2",
-				"@openui5/themelib_sap_belize": "^1.82.2"
+				"@openui5/themelib_sap_belize": "^1.82.2",
+				"express": "^4.17.1"
 		},
 		"scripts": {
 				"dev": "ui5 serve",
@@ -16,7 +17,7 @@
 				"prebuild": "rimraf dist",
 				"build": "ui5 build -a --clean-dest",
 				"build-self-contained": "ui5 build self-contained -a --clean-dest",
-				"start": "serve dist"
+        "start": "node server.js"
 		},
 		"devDependencies": {
 				"@ui5/cli": "^2.5.0",
