@@ -1,0 +1,27 @@
+{
+		"name": "covidrep",
+		"version": "0.0.1",
+		"description": "test covid",
+		"private": "true",
+		"dependencies": {
+				"@openui5/sap.f": "^1.82.2",
+				"@openui5/sap.m": "^1.82.2",
+				"@openui5/sap.ui.core": "^1.82.2",
+				"@openui5/themelib_sap_belize": "^1.82.2"
+		},
+		"scripts": {
+				"dev": "ui5 serve",
+				"lint": "eslint webapp",
+				"test": "npm run lint",
+				"prebuild": "rimraf dist",
+				"build": "ui5 build -a --clean-dest",
+				"build-self-contained": "ui5 build self-contained -a --clean-dest",
+				"start": "ws --compress -d dist"
+		},
+		"devDependencies": {
+				"@ui5/cli": "^2.5.0",
+				"eslint": "^7.12.0",
+				"local-web-server": "^4.2.1",
+				"rimraf": "^3.0.2"
+		}
+}

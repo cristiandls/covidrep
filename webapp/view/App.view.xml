@@ -1,0 +1,51 @@
+<mvc:View controllerName="demo.app.covidrep.controller.App" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.f"
+	xmlns:layout="sap.ui.layout" height="100%">
+	<f:DynamicPage id="idPaginaPrincipal" headerExpanded="true" toggleHeaderOnTitleClick="true">
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<Title text="COVID19"/>
+				</f:heading>
+				<f:expandedContent>
+					<Label text="Reporte de status de covid"/>
+				</f:expandedContent>
+				<f:snappedContent>
+					<Label text="Reporte de status de covid"/>
+				</f:snappedContent>
+				<f:snappedTitleOnMobile>
+					<Title text="Reporte de status de covid"/>
+				</f:snappedTitleOnMobile>
+				<f:content>
+					<OverflowToolbar>
+						<GenericTag text="Negativos" status="Success" design="StatusIconHidden">
+							<ObjectNumber number="54" unit="" emphasized="true" state="Success"/>
+						</GenericTag>
+						<GenericTag text="Positivos" status="Error" design="StatusIconHidden">
+							<ObjectNumber number="236" unit="" emphasized="true" state="Error"/>
+						</GenericTag>
+						<GenericTag text="Recuperados" status="Warning" design="StatusIconHidden">
+							<ObjectNumber number="198" unit="" emphasized="false" state="Warning"/>
+						</GenericTag>
+						<GenericTag text="En análisis" status="Information" design="StatusIconHidden">
+							<ObjectNumber number="44" unit="" emphasized="false" state="Information"/>
+						</GenericTag>
+					</OverflowToolbar>
+				</f:content>
+			</f:DynamicPageTitle>
+		</f:title>
+		<f:header>
+			<f:DynamicPageHeader pinnable="false">
+				<layout:HorizontalLayout allowWrapping="true">
+					<layout:VerticalLayout class="sapUiMediumMarginEnd">
+						<ObjectAttribute title="Fecha" text="26.10.2020"/>
+					</layout:VerticalLayout>
+					<layout:VerticalLayout>
+						<ObjectAttribute title="Un título"/>
+						<ObjectStatus text="Sistema OK" state="Success"/>
+					</layout:VerticalLayout>
+				</layout:HorizontalLayout>
+			</f:DynamicPageHeader>
+		</f:header>
+		<f:content></f:content>
+	</f:DynamicPage>
+</mvc:View>
