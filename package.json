@@ -16,7 +16,7 @@
 				"prebuild": "rimraf dist",
 				"build": "ui5 build -a --clean-dest",
 				"build-self-contained": "ui5 build self-contained -a --clean-dest",
-				"start": "ws --compress -d dist"
+				"start": "serve dist"
 		},
 		"devDependencies": {
 				"@ui5/cli": "^2.5.0",
